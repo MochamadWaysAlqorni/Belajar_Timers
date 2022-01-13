@@ -2,8 +2,8 @@ void setup() {
   Serial.begin(115200);
   TCCR1A = 0;
   TCCR1B = 0;
-  //OCR1A = 31249;
-  //OCR1B = 15624;
+  //OCR1A = 31249; //comparator COMPA OCR1A/B = (Fxtal/prescaler.Ftarget)-1
+  //OCR1B = 15624; //comparator COMPB OCR1A/B = (Fxtal/prescaler.Ftarget)-1
   //TCNT1 = 3036; //TCNT1 = 65536 - Fxtal/prescaler.Ftarget
   //TCCR1B |= (1<<CS10); //prescaler 1
   //TCCR1B |= (1<<CS12); //prescaler 256
